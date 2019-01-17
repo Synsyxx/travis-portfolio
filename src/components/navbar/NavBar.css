@@ -1,12 +1,12 @@
-.root {
+#classes .root {
     flex-grow: 1;
 }
 
-.grow {
+#classes .grow {
     flex-grow: 1;
 }
 
-.menuButton {
+#classes .menuButton {
     margin-right: 20;
     margin-left: -12;
 }

@@ -14,7 +14,7 @@ import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
 import { Icon } from '@material-ui/core';
 
-import './NavBar.css';
+import './NavBar.css'
 
 
 class NavBar extends React.Component {
@@ -41,7 +41,7 @@ class NavBar extends React.Component {
         const open = Boolean(anchorEl);
 
         return (
-            <div className={classes.root}>
+            <div id="classes" class="root">
                 <FormGroup>
                     <FormControlLabel
                         control={
@@ -52,10 +52,10 @@ class NavBar extends React.Component {
                 </FormGroup>
                 <AppBar position="static">
                     <Toolbar>
-                        <IconButton className={classes.menuButton} color="inherit" aria-label="Menu">
+                        <IconButton id="classes" class="menuButton" color="inherit" aria-label="Menu">
                             <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" color="inherit" className={classes.grow}>
+                        <Typography variant="h6" color="inherit" id="classes" class="grow">
                             Photos
                         </Typography>
                         {auth && (
