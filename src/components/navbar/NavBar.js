@@ -6,7 +6,6 @@ import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import IconButton from '@material-ui/core/IconButton';
 import MenuIcon from '@material-ui/icons/Menu';
-import AccountCircle from '@material-ui/icons/AccountCircle';
 import Switch from '@material-ui/core/Switch';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import FormGroup from '@material-ui/core/FormGroup';
@@ -42,23 +41,11 @@ class NavBar extends React.Component {
 
         return (
             <div id="classes" class="root">
-                <FormGroup>
-                    <FormControlLabel
-                        control={
-                            <Switch checked={auth} onChange={this.handleChange} aria-label="LoginSwitch" />
-                        }
-                        label={auth ? 'Logout' : 'Login'}
-                    />
-                </FormGroup>
                 <AppBar position="static">
                     <Toolbar>
                         <IconButton id="classes" class="menuButton" color="inherit" aria-label="Menu">
                             <MenuIcon />
                         </IconButton>
-                        <Typography variant="h6" color="inherit" id="classes" class="grow">
-                            Photos
-                        </Typography>
-                        {auth && (
                             <div>
                                 <IconButton
                                     aria-owns={open ? 'menu-appbar' : undefined}
@@ -66,23 +53,8 @@ class NavBar extends React.Component {
                                     onClick={this.handleMenu}
                                     color="inherit"
                                 >
-                                    <AccountCircle />
                                 </IconButton>
-                                <Menu
-                                    id="menu-appbar"
-                                    anchorEl={anchorEl}
-                                    anchorOrigin={{
-                                        vertical: 'top',
-                                        horizontal: 'right',
-                                    }}
-                                    open={open}
-                                    onClose={this.handleClose}
-                                >
-                                    <MenuItem onClick={this.handleClose}>Profile</MenuItem>
-                                    <MenuItem onClick={this.handleClose}>My Account</MenuItem>
-                                </Menu>    
                             </div>
-                        )}
                     </Toolbar>  
                 </AppBar>
             </div>
