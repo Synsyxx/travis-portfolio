@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import NavBar from './components/navbar/NavBar.js';
+import ContactCard from './components/contactcard/contactCard';
 
 class App extends Component {
     render() {
         return (
-            <div>
-                <NavBar />
+            <div class="react-card">
+            <ContactCard />
             </div>
         )
     }
