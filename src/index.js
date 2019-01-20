@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import ContactCard from './components/contactcard/contactCard';
+import Card from './components/contactcard/contactCard';
 
 class App extends Component {
     render() {
         return (
             <div class="react-card">
-            <ContactCard />
+            <Card />
             </div>
         )
     }
