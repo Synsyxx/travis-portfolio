@@ -1,5 +1,7 @@
 /*- Typograpy and resets -*/
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css');
+@import url('https://use.fontawesome.com/releases/v5.6.3/css/all.css');
 
 html {
   font-size: 16px;
@@ -39,8 +41,8 @@ h2 {
 }
 
 img {
-  max-width: 100%;
-  max-height: 100%;
+  max-width: 358px;
+  max-height: 458px;
 }
 
 /*- Card body -*/

@@ -39,7 +39,7 @@ class CardInput extends React.Component {
   // React component for social profile links
   class CardProfileLinks extends React.Component {
     render() {
-      const profileLinks = ['twitter', 'linkedin', 'dribbble', 'facebook'];
+      const profileLinks = ['twitter', 'linkedin', 'github'];
       
       const linksList = profileLinks.map((link, index) =>
         <li key={index}><a href='#'><i className={'fa fa-' + link}></i></a></li>
@@ -63,7 +63,7 @@ class CardInput extends React.Component {
           <div className='container-fluid'>
             <div className='row'>
               <div className='col-xs-6'>
-                
+                <img src='#' />
               </div>
   
               <div className='col-xs-6 side-front-content'>
@@ -75,7 +75,7 @@ class CardInput extends React.Component {
   
                 <p>I am currently going through Lambda Next as I continue to sharpen my skills while searching for employment.</p>
   
-                <p>I have been priviledged with the opportunity to work closely with government officials in software use and cyber security.</p>
+                <p>I have taken giant leaps of faith driven by passion and desire to reinvent myself as a software developer.</p>
               </div>
             </div>
           </div>
